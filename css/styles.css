@@ -1,12 +1,25 @@
+.question1-front {
+  display: none;
+}
+
+.question1-back {
+  display: none;
+}
+
 h1 {
   text-align: center;
   font-variant: small-caps;
   font-style: italic;
   font-family: helvetica;
   font-size: 60px;
+  text-shadow: 2px 2px 1px grey;
 
 }
 
 body {
   background-image: url("../img/background.png");
+}
+
+form {
+  margin-top: 60px;
 }

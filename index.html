@@ -4,7 +4,7 @@
     <title>Epicodus Track Suggester</title>
     <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
@@ -15,7 +15,87 @@
         <h1>Epicodus Track Suggester</h1>
       </div>
 
-      <!--  -->
+      <!-- Question Form -->
+      <div class="questionnaire">
+        <h3>This is a questionnaire will help you decide which course track you should take at Epicodus!<br><br><strong>Let's get started.</strong></h3>
+        <form id="first-question">
+          <div class="form-group">
+            <h2>First Question</h2>
+            <p>
+              The first thing we need to find out is which area of development do you prefer.  Are you interested in working in front-end development or back-end development?
+            </p>
+            <div class="question1">
+            	<div class="radio">
+            		<label>
+            		  <input type="radio" name="frontend-backend" value="front" checked />
+                  Front-End
+                </label>
+              </div>
+              <div class="radio">
+            		<label>
+            		  <input type="radio" name="frontend-backend" value="back" />
+                  Back-End
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit!</button>
+        </form>
+      </div>
+
+      <!-- Question 1 Output -->
+      <div class="container">
+        <div class="question1-front">
+          <form id="front-form">
+            <div class="form-group">
+              <h2>Second Question</h2>
+              <p>
+                Now that you've decided you would like to pursue front-end development 
+              </p>
+              <div class="question1">
+              	<div class="radio">
+              		<label>
+              		  <input type="radio" name="frontend-backend" value="front" checked />
+                    Front-End
+                  </label>
+                </div>
+                <div class="radio">
+              		<label>
+              		  <input type="radio" name="frontend-backend" value="back" />
+                    Back-End
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn">Submit!</button>
+          </form>
+        </div>
+        <div class="question1-back">
+          <form id="back-form">
+            <div class="form-group">
+              <h2>First Question</h2>
+              <p>
+                The first thing we need to find out is which area of development do you prefer.  Are you interested in working in front-end development or back-end development?
+              </p>
+              <div class="question1">
+              	<div class="radio">
+              		<label>
+              		  <input type="radio" name="frontend-backend" value="front" checked />
+                    Front-End
+                  </label>
+                </div>
+                <div class="radio">
+              		<label>
+              		  <input type="radio" name="frontend-backend" value="back" />
+                    Back-End
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn">Submit!</button>
+          </form>
+        </div>
+      </div>
 
     </div>
   </body>
