@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 
 
-  $("form#front-form").submit(function(event) {
+  $("form#back-form").submit(function(event) {
     event.preventDefault();
     $(".questionnaire").css("display", "none");
 

@@ -1,11 +1,3 @@
-.question1-front {
-  display: none;
-}
-
-.question1-back {
-  display: none;
-}
-
 h1 {
   text-align: center;
   font-variant: small-caps;
@@ -22,4 +14,25 @@ body {
 
 form {
   margin-top: 60px;
+}
+
+.question1-front {
+  display: none;
+}
+
+.question1-back {
+  display: none;
+}
+
+.thumbnails {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.thumbnail-text {
+  text-align: center;
+  font-variant: small-caps;
+  margin-top: 20px;
+  color: rgb(28, 179, 179);
+
 }
