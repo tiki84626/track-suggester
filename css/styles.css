@@ -48,6 +48,14 @@ form {
   display: none;
 }
 
+.question4-php {
+  display: none;
+}
+
+.question4-ruby {
+  display: none;
+}
+
 .thumbnails {
   text-align: center;
   margin-top: 15px;

@@ -15,7 +15,7 @@
       </div>
       <!-- Initial Question -->
       <div class="questionnaire">
-        <h3>This is a questionnaire will help you decide which course track you should take at Epicodus!<br><br><strong>Let's get started.</strong></h3>
+        <h3>This is a questionnaire designed to help you decide which course track you should take at Epicodus!<br><br><strong>Let's get started.</strong></h3>
         <form id="first-question">
           <div class="form-group">
             <h2>Front-End or Back-End</h2>
@@ -86,7 +86,7 @@
                 Now that we know you would like to pursue a back-end development track, answer a couple more questions to figure out the specific back-end track that is right for you!
               </p>
               <p>
-                Select your ideal company size:
+                Please select your ideal company size:
               </p>
               <div class="question2">
               	<div class="radio">
@@ -115,7 +115,7 @@
                 Great! Now that we know you would like to work for a small company doing back-end developing let us turn to the question of what type of product you would like to produce.
               </p>
               <p>
-                Select one of the following types of product:
+                Please select one of the following types of product:
               </p>
               <div class="question3">
               	<div class="radio">
@@ -144,7 +144,7 @@
                 Great! Now that we know you would like to work for a big company doing back-end developing let us turn to the question of what type of product you would like to produce.
               </p>
               <p>
-                Select one of the following types of product:
+                Please select one of the following types of product:
               </p>
               <div class="question3">
               	<div class="radio">
@@ -163,6 +163,35 @@
               		<label>
               		  <input type="radio" name="product-type-big" value="android" />
                     Android Applications
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn">Next</button>
+          </form>
+        </div>
+        <!-- Output if web application is choosen -->
+        <div class="question3-web">
+          <form id="web-form">
+            <div class="form-group">
+              <h2>Little User Interaction or Highly Interactive</h2>
+              <p>
+                Great! Now that we know you would like to focus on back-end developing and specifically producing web applications let us turn to the question of who your typical clients might be.
+              </p>
+              <p>
+                Please select one of the following:
+              </p>
+              <div class="question4">
+              	<div class="radio">
+              		<label>
+              		  <input type="radio" name="client-type" value="1" checked />
+                    Content Heavy Websites w/ Little User Interaction
+                  </label>
+                </div>
+                <div class="radio">
+              		<label>
+              		  <input type="radio" name="client-type" value="2" />
+                    Highly Interactive
                   </label>
                 </div>
               </div>
@@ -199,6 +228,70 @@
             </div>
             <div class="col-xs-3 thumbnails">
               <img src="img/net.png" alt="Thumbnail for Design" />
+            </div>
+          </div>
+        </div>
+        <!-- Output if little user interaction is choosen -->
+        <div class="question4-php">
+          <h2>Congratulations!! You have expressed interest in learning back-end development web applications.  Since you are interested in working on content-heavy websites with relatively little user interaction I would recommend the following track for you:</h2>
+          <div class="row">
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Intro to Programming</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>PHP</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>JavaScript</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Drupal</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 thumbnails">
+              <img src="img/intro.png" alt="Thumbnail for Intro to Programming" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/php.png" alt="Thumbnail for CSS" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/js.png" alt="Thumbnail for JavaScript" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/drupal.png" alt="Thumbnail for Design" />
+            </div>
+          </div>
+        </div>
+        <!-- Output if highly interactive is choosen -->
+        <div class="question4-ruby">
+          <h2>Congratulations!! You have expressed interest in learning back-end development web applications.  Since you are interested in working on highly interactive web applications I would recommend the following track for you:</h2>
+          <div class="row">
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Intro to Programming</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Ruby</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>JavaScript</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Rails</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 thumbnails">
+              <img src="img/intro.png" alt="Thumbnail for Intro to Programming" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/ruby.png" alt="Thumbnail for CSS" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/js.png" alt="Thumbnail for JavaScript" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/rails.png" alt="Thumbnail for Design" />
             </div>
           </div>
         </div>

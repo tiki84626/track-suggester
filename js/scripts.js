@@ -56,4 +56,18 @@ $(document).ready(function() {
       $(".question3-android").show();
     }
   });
+
+  $("form#web-form").submit(function(event) {
+    var clientType = $("input:radio[name=client-type]:checked").val();
+
+    event.preventDefault();
+    $(".questionnaire").css("display", "none");
+    $(".question3-web").css("display", "none");
+
+    if (clientType === "1") {
+      $(".question4-php").show();
+    } else {
+      $(".question4-ruby").show();
+    }
+  });
 });
