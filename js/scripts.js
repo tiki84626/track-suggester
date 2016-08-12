@@ -7,9 +7,9 @@ $(document).ready(function() {
     $(".questionnaire").css("display", "none");
 
     if (frontEndBackEnd === "front") {
-      $(".question1-front").show();
+      $(".question1-front").slideDown(1000);
     } else {
-      $(".question1-back").show();
+      $(".question1-back").slideDown(1000);
     }
   });
 
@@ -21,9 +21,9 @@ $(document).ready(function() {
     $(".question1-back").css("display", "none");
 
     if (smallBigCompany === "small") {
-      $(".question2-small").show();
+      $(".question2-small").slideDown(1000);
     } else {
-      $(".question2-big").show();
+      $(".question2-big").slideDown(1000);
     }
   });
 
@@ -35,9 +35,9 @@ $(document).ready(function() {
     $(".question2-small").css("display", "none");
 
     if (productType === "web") {
-      $(".question3-web").show();
+      $(".question3-web").slideDown(1000);
     } else {
-      $(".question3-android").show();
+      $(".question3-android").slideDown(1000);
     }
   });
 
@@ -49,11 +49,11 @@ $(document).ready(function() {
     $(".question2-big").css("display", "none");
 
     if (productTypeBig === "web") {
-      $(".question3-web").show();
+      $(".question3-web").slideDown(1000);
     } else if (productTypeBig === "business"){
-      $(".question3-business").show();
+      $(".question3-business").slideDown(1000);
     } else {
-      $(".question3-android").show();
+      $(".question3-android").slideDown(1000);
     }
   });
 
@@ -65,9 +65,9 @@ $(document).ready(function() {
     $(".question3-web").css("display", "none");
 
     if (clientType === "1") {
-      $(".question4-php").show();
+      $(".question4-php").slideDown(1000);
     } else {
-      $(".question4-ruby").show();
+      $(".question4-ruby").slideDown(1000);
     }
   });
 });
