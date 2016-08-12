@@ -9,20 +9,21 @@
   </head>
   <body>
     <div class="container">
-
       <!-- Page Header -->
       <div class="page-header">
         <h1>Epicodus Track Suggester</h1>
       </div>
-
-      <!-- Question Form -->
+      <!-- Initial Question -->
       <div class="questionnaire">
         <h3>This is a questionnaire will help you decide which course track you should take at Epicodus!<br><br><strong>Let's get started.</strong></h3>
         <form id="first-question">
           <div class="form-group">
-            <h2>First Question</h2>
+            <h2>Front-End or Back-End</h2>
             <p>
-              The first thing we need to find out is which area of development do you prefer.  Are you interested in working in front-end development or back-end development?
+              The first thing we need to find out is which area of development do you prefer.
+            </p>
+            <p>
+              Please select which area of development you would like to pursue:
             </p>
             <div class="question1">
             	<div class="radio">
@@ -39,12 +40,12 @@
               </div>
             </div>
           </div>
-          <button type="submit" class="btn">Submit!</button>
+          <button type="submit" class="btn">Next</button>
         </form>
       </div>
-
-      <!-- Question 1 Output -->
+      <!-- Outputs -->
       <div class="container">
+        <!-- Output if front-end is choosen -->
         <div class="question1-front">
           <h2>Congratulations!! You have expressed interest in learning front-end development.  The Epicodus track that I would recommend for you is:</h2>
           <div class="row">
@@ -76,33 +77,165 @@
             </div>
           </div>
         </div>
+        <!-- Output if back-end is choosen -->
         <div class="question1-back">
           <form id="back-form">
             <div class="form-group">
-              <h2>Second Question</h2>
+              <h2>Big Company or Small Company</h2>
               <p>
-                The first thing we need to find out is which area of development do you prefer.  Are you interested in working in front-end development or back-end development?
+                Now that we know you would like to pursue a back-end development track, answer a couple more questions to figure out the specific back-end track that is right for you!
               </p>
-              <div class="question1">
+              <p>
+                Select your ideal company size:
+              </p>
+              <div class="question2">
               	<div class="radio">
               		<label>
-              		  <input type="radio" name="frontend-backend" value="front" checked />
-                    Front-End
+              		  <input type="radio" name="small-big" value="small" checked />
+                    Small Company
                   </label>
                 </div>
                 <div class="radio">
               		<label>
-              		  <input type="radio" name="frontend-backend" value="back" />
-                    Back-End
+              		  <input type="radio" name="small-big" value="big" />
+                    Big Company
                   </label>
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn">Submit!</button>
+            <button type="submit" class="btn">Next</button>
           </form>
         </div>
-      </div>
+        <!-- Output if small company is choosen -->
+        <div class="question2-small">
+          <form id="small-form">
+            <div class="form-group">
+              <h2>Type of Product you are Interested in Producing</h2>
+              <p>
+                Great! Now that we know you would like to work for a small company doing back-end developing let us turn to the question of what type of product you would like to produce.
+              </p>
+              <p>
+                Select one of the following types of product:
+              </p>
+              <div class="question3">
+              	<div class="radio">
+              		<label>
+              		  <input type="radio" name="product-type" value="web" checked />
+                    Web Applications
+                  </label>
+                </div>
+                <div class="radio">
+              		<label>
+              		  <input type="radio" name="product-type" value="android" />
+                    Android Applications
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn">Next</button>
+          </form>
+        </div>
+        <!-- Output if big company is choosen -->
+        <div class="question2-big">
+          <form id="big-form">
+            <div class="form-group">
+              <h2>Type of Product you are Interested in Producing</h2>
+              <p>
+                Great! Now that we know you would like to work for a big company doing back-end developing let us turn to the question of what type of product you would like to produce.
+              </p>
+              <p>
+                Select one of the following types of product:
+              </p>
+              <div class="question3">
+              	<div class="radio">
+              		<label>
+              		  <input type="radio" name="product-type-big" value="web" checked />
+                    Web Applications
+                  </label>
+                </div>
+                <div class="radio">
+              		<label>
+              		  <input type="radio" name="product-type-big" value="business" />
+                    Internal or Business Applications
+                  </label>
+                </div>
+                <div class="radio">
+              		<label>
+              		  <input type="radio" name="product-type-big" value="android" />
+                    Android Applications
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn">Next</button>
+          </form>
+        </div>
+        <!-- Output if business applications is choosen -->
+        <div class="question3-business">
+          <h2>Congratulations!! You have expressed interest in learning back-end development for internal or business applications.  The Epicodus track that I would recommend for you is:</h2>
+          <div class="row">
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Intro to Programming</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>C#</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>JavaScript</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>.NET</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 thumbnails">
+              <img src="img/intro.png" alt="Thumbnail for Intro to Programming" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/c.png" alt="Thumbnail for CSS" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/js.png" alt="Thumbnail for JavaScript" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/net.png" alt="Thumbnail for Design" />
+            </div>
+          </div>
+        </div>
+        <!-- Output if Android is choosen -->
+        <div class="question3-android">
+          <h2>Congratulations!! You have expressed interest in learning back-end development for Android.  The Epicodus track that I would recommend for you is:</h2>
+          <div class="row">
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Intro to Programming</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Java</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>JavaScript</h3>
+            </div>
+            <div class="col-xs-3 thumbnail-text">
+              <h3>Android</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3 thumbnails">
+              <img src="img/intro.png" alt="Thumbnail for Intro to Programming" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/java.png" alt="Thumbnail for CSS" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/js.png" alt="Thumbnail for JavaScript" />
+            </div>
+            <div class="col-xs-3 thumbnails">
+              <img src="img/android.png" alt="Thumbnail for Design" />
+            </div>
+          </div>
+        </div>
 
+      </div>
     </div>
   </body>
 </html>

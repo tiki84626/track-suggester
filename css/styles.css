@@ -8,6 +8,10 @@ h1 {
 
 }
 
+p {
+  max-width: 500px;
+}
+
 body {
   background-image: url("../img/background.png");
 }
@@ -21,6 +25,26 @@ form {
 }
 
 .question1-back {
+  display: none;
+}
+
+.question2-small {
+  display: none;
+}
+
+.question2-big {
+  display: none;
+}
+
+.question3-android {
+  display: none;
+}
+
+.question3-web {
+  display: none;
+}
+
+.question3-business {
   display: none;
 }
 
